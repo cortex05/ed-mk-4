@@ -4,9 +4,9 @@ import { useParams } from "react-router-dom";
 const CoursePage = () => {
   const { courseId } = useParams<string>();
   return (
-    <div>
+    <div className='font-serif'>
       Course Page
-      <h1>Course Id: {courseId}</h1>
+      <h1  className='text-center'>Course Id: {courseId}!!</h1>
     </div>
   )
 }
