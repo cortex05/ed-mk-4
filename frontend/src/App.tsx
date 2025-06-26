@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from './components/Header'
+import Header from './components/Header/Header'
 import Home from './screens/home/HomeScreen'
 import GradeLevels from './screens/gradeLevel/GradeLevelScreen'
 import Subjects from './screens/subjects/SubjectsScreen'
@@ -10,15 +10,17 @@ function App() {
 
   return (
     <>
-      <Header />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/gradelevels" element={<GradeLevels />} />
-          <Route path="/subjects" element={<Subjects />} />
-          <Route path="/course/:courseId" element={<Course />} />
-        </Routes>
-      </BrowserRouter>
+      <div>
+        <Header />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/gradelevels" element={<GradeLevels />} />
+            <Route path="/subjects" element={<Subjects />} />
+            <Route path="/course/:courseId" element={<Course />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
     </>
   )
 }
