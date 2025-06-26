@@ -1,0 +1,12 @@
+.lander {
+  background-color: rgb(19, 19, 183);
+  color: white;
+}
+
+@media only screen and (min-width: 769px){
+  .lander {
+    background-image: url('../../assets/linkedIn_Landing.png');
+    background-size: 100%;
+    color: white;
+  }
+}
