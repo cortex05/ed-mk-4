@@ -11,8 +11,8 @@ function App() {
   return (
     <>
       <div>
-        <Header />
         <BrowserRouter>
+          <Header />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/gradelevels" element={<GradeLevels />} />

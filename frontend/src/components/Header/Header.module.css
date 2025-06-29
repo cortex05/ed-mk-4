@@ -6,6 +6,16 @@
   /* top: 0; */
 }
 
+.links button {
+  margin-right: 10px;
+  transition: .7s;
+  border-bottom: 2px solid black;
+}
+
+.links button:hover {
+  border-bottom: 2px solid rgb(13, 13, 255);
+}
+
 .headerButton {
   border: 2px solid white;
   transition: .7s;

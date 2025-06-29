@@ -3,7 +3,7 @@ import styles from './Home.module.css'
 
 const HomePage = () => {
   return (
-    <div >
+    <div>
       <div className={`${styles.lander} p-8`}>
         <h1 className='text-center text-4xl mb-4'>Welcome to Daniel's App</h1>
         <p>This is an educational resource for helping people seek out information they may need for learning. If you lack access to a curriculum, if your teacher's explanations are lost on you or you're ahead of the curve and want to know what is next, this app is for you.</p>
