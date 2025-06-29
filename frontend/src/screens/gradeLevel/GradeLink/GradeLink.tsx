@@ -1,10 +1,15 @@
-import React from 'react'
 import styles from './GradeLink.module.css'
+import type { IGradeLink } from '../../../types/types'
 
-const GradeLink = () => {
+type Props = {
+  grade: IGradeLink
+}
+
+const GradeLink = (props : Props) => {
+  const { grade } = props
   return (
     <div className={`${styles.link}`}>
-      <h4 className='text-xl'>Holder</h4>
+      <h4 className='text-xl'>{grade.gradeName}</h4>
     </div>
   )
 }
