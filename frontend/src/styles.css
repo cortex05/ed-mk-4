@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+@theme {
+  --color-modal: #222a3d;
+}
