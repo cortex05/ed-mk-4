@@ -1,22 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import type { ICourseLink } from '../../../types/types'
+import { handleColor } from '../../../utility/Functions'
+import styles from './CourseLink.module.css'
+
 type Props = {
   link: ICourseLink
 }
 const CourseLink = (props: Props) => {
   const { link } = props
-  const handleColor = (value:string) => {
-    switch(value){
-      case "MATH":
-        return "red"
-      default:
-        return "blue"
-    }
-  }
+  const [backColor, setBackColor] = useState<string>("blue")
 
-  // handleColor(link.domain)
+  useEffect(() => {
+    setBackColor(handleColor(link.domain))
+  }, [])
+
   return (
-    <div className={`bg-${handleColor(link.domain)}`}>
+    <div className={`${backColor} p-1 mr-4 mb-[4px] text-center ${styles.break}`}>
       <p>{link.name}</p>
     </div>
   )

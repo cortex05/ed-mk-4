@@ -4,6 +4,7 @@ import Modal from '../../components/Modal/Modal'
 import { useState } from 'react'
 import type { ICourseLink, IGradeLink } from '../../types/types'
 import CourseLink from '../../components/utilities/CourseLink/CourseLink'
+import styles from './GradeLevelScreen.module.css'
 
 const GradeLevelPage = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
@@ -24,8 +25,8 @@ const GradeLevelPage = () => {
       </div>
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
         <h2 className='text-3xl text-center'>{activePreview?.gradeName}</h2>
-        <h3 className='text-l'>{activePreview?.supportText}</h3>
-        <div>
+        <h3 className='text-l mb-4'>{activePreview?.supportText}</h3>
+        <div className={`mt-2 ${styles.break}`}>
           {activePreview?.courseLinks.map((courseLink: ICourseLink) => {
             return <CourseLink key={courseLink.id} link={courseLink}/>
           })}

@@ -13,10 +13,10 @@
 
 .wrapper > div {
   background: #222a3d;
-  min-height: 200px;
+  /* min-height: 200px; */
   width: 80%;
   margin: auto;
-  padding: 2%;
+  padding: 16px;
   border: 2px solid #000;
   border-radius: 5px;
   box-shadow: 2px solid black;

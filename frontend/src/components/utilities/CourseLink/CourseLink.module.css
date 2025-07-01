@@ -1,0 +1,18 @@
+.break {
+  width: 80%;
+  margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 492px){
+  .break {
+    width: 45%;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 769px){
+  .break {
+    width: 150px;
+    margin-right: 10px;
+  }
+}
