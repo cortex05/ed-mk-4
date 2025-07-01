@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import type { ICourseLink } from '../../../types/types'
-import { handleColor } from '../../../utility/Functions'
+import { handleCourseLinkColor } from '../../../utility/Functions'
 import styles from './CourseLink.module.css'
 
 type Props = {
@@ -11,7 +11,7 @@ const CourseLink = (props: Props) => {
   const [backColor, setBackColor] = useState<string>("blue")
 
   useEffect(() => {
-    setBackColor(handleColor(link.domain))
+    setBackColor(handleCourseLinkColor(link.domain))
   }, [])
 
   return (
