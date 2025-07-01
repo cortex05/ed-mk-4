@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import type { ICourseLink } from '../../../types/types'
 import { handleCourseLinkColor } from '../../../utility/Functions'
 import styles from './CourseLink.module.css'

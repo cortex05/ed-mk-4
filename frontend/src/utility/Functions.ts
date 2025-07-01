@@ -1,4 +1,4 @@
-export const handleCourseLinkColor = (value:string) => {
+export const handleCourseLinkColor = (value:string): string => {
     switch(value){
       case "MATH":
         return "bg-red-500"

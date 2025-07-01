@@ -1,6 +1,4 @@
-import React from 'react'
 import styles from './Header.module.css'
-import Button from '../utilities/Button/Button'
 import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
