@@ -5,8 +5,41 @@ export const mockCourse = {
     {
       id: "CH_ALG_ONE_1",
       courseId: "ALGEBRA_ONE",
+      name: "1 - Basics",
       units: [
-        "Unit 1.1"
+        {
+          id: "U_ALG_ONE_1_BASICS",
+          name: "1.1 Algebra basics",
+          chapterId: "CH_ALG_ONE_1",
+          description: [
+            "You need to know the basics operators (Addition, Subtraction, Multiplication, Division.", 
+            "It would also be nice to be good at them."
+          ],
+          freeAssetLinks: ["link1"]
+        },{
+          id: "U_ALG_ONE_2_EXPONENT",
+          name: "1.2 Exponents",
+          chapterId: "CH_ALG_ONE_1",
+          description: [
+            "The other thing"
+          ],
+          freeAssetLinks: ["link1"]
+        }
+      ]
+    },{
+      id: "CH_ALG_ONE_2",
+      courseId: "ALGEBRA_ONE",
+      name: "2 - Order of Operations",
+      units: [
+        {
+          id: "U_ALG_ONE_2_PEMDAS",
+          name: "2.1 PEMDAS",
+          chapterId: "CH_ALG_ONE_2",
+          description: [
+            "The next thing"
+          ],
+          freeAssetLinks: ["link1"]
+        }
       ]
     }
   ]
@@ -18,22 +51,18 @@ export const badCourse = {
   chapters: []
 }
 
-// [
-//         {
-//           id: "U_ALG_ONE_1_BASICS",
-//           name: "Algebra basics",
-//           chapterId: "CH_ALG_ONE_1",
-//           description: [
+
+// description: [
 //             {
 //               id: 0,
 //               unitId: "DES_ALG_ONE_1_BASICS",
 //               text: "This is where we build out the ground work for all of algebra. Some of this may be review, but if not, it must be learned now."
 //             }
-//           ],
-//           freeAssetLinks: [{
-//             id: "FAL_ALG_ONE_1_1",
-//             mediaType: "YOU_TUBE",
-//             linkUrl: "https://www.youtube.com/watch?v=GAN-jgzYsIo"
-//           }]
-//         }
-//       ]
+//           ]
+
+
+      // freeAssetLinks: [{
+      //       id: "FAL_ALG_ONE_1_1",
+      //       mediaType: "YOU_TUBE",
+      //       linkUrl: "https://www.youtube.com/watch?v=GAN-jgzYsIo"
+      //     }]

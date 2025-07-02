@@ -22,16 +22,17 @@ export interface ICourse {
 export interface IChapter {
   id: string
   courseId: string
-  units: string[]
+  name: string
+  units: IUnit[]
 }
 
-// export interface IUnit {
-//   id: string
-//   name: string
-//   chapterId: string
-//   description: string[]
-//   freeAssetLinks: IAssetLink[]
-// }
+export interface IUnit {
+  id: string
+  name: string
+  chapterId: string
+  description: string[]
+  freeAssetLinks: string[]
+}
 
 // export interface IDescription {
 //   id: string

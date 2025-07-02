@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import type { ICourse } from '../../types/types';
 
 import { badCourse, mockCourse } from '../../assets/mockData/course.ts'
+import ChapterDisplay from './displays/chapter/ChapterDisplay.tsx';
 
 
 
@@ -31,7 +32,10 @@ const CoursePage = () => {
       {!isLoading &&  course &&
         <div>
           <h1 className='text-center text-2xl'>Course Id: {courseId}!!</h1>
-          <h1 className='text-center text-2xl underline underline-offset-8'>{course.name}</h1>
+          <h1 className='text-center text-2xl md:text-4xl underline underline-offset-8 mb-4'>{course.name}</h1>
+          {course.chapters.map((chapter) => {
+            return <ChapterDisplay key={chapter.id} chapter={chapter}/>
+          })}
         </div>
       }
     </div>
