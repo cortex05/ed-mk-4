@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import styles from './UnitDisplay.module.css'
 import type { IUnit } from '../../../../types/types'
+import FreeAssetLinkDisplay from '../fal/FreeAssetLinkDisplay'
 
 type Props = {
   unit: IUnit
@@ -26,7 +27,7 @@ const UnitDisplay = (props: Props) => {
           </div>
           <div className={`${styles.linkField} mb-2 flex flex-row`}>
             {freeAssetLinks.map((FAL, index) => {
-              return <p key={index}>{FAL}</p>
+              return <FreeAssetLinkDisplay key={index} asset={FAL}/>
             })}
           </div>
         </div>

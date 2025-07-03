@@ -15,7 +15,13 @@ export const mockCourse = {
             "You need to know the basics operators (Addition, Subtraction, Multiplication, Division.", 
             "It would also be nice to be good at them."
           ],
-          freeAssetLinks: ["link1"]
+          freeAssetLinks: [
+            {
+              id: "one",
+              mediaType: "YOUTUBE",
+              linkUrl: "www.youtube.com"
+            }
+          ]
         },{
           id: "U_ALG_ONE_2_EXPONENT",
           name: "1.2 Exponents",
@@ -23,7 +29,13 @@ export const mockCourse = {
           description: [
             "The other thing"
           ],
-          freeAssetLinks: ["link1"]
+          freeAssetLinks: [
+            {
+              id: "one",
+              mediaType: "YOUTUBE",
+              linkUrl: "www.youtube.com"
+            }
+          ]
         }
       ]
     },{
@@ -38,7 +50,13 @@ export const mockCourse = {
           description: [
             "The next thing"
           ],
-          freeAssetLinks: ["link1"]
+          freeAssetLinks: [
+            {
+              id: "one",
+              mediaType: "YOUTUBE",
+              linkUrl: "www.youtube.com"
+            }
+          ]
         }
       ]
     }

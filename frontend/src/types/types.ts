@@ -31,7 +31,7 @@ export interface IUnit {
   name: string
   chapterId: string
   description: string[]
-  freeAssetLinks: string[]
+  freeAssetLinks: IAssetLink[]
 }
 
 // export interface IDescription {
@@ -40,8 +40,8 @@ export interface IUnit {
 //   text: string
 // }
 
-// export interface IAssetLink {
-//   id: string
-//   mediaType: string
-//   linkUrl: string
-// }
+export interface IAssetLink {
+  id: string
+  mediaType: string
+  linkUrl: string
+}
