@@ -20,8 +20,8 @@ const UnitDisplay = (props: Props) => {
         <div className={`${styles.descriptionBody} p-2`}>
           <div>
             {description.map((description) => {
-              return <div className='mb-2'>
-                {description}
+              return <div className='mb-2' key={description.id}>
+                {description.text}
               </div>
             })}
           </div>
