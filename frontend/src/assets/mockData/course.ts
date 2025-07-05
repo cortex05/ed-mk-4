@@ -25,8 +25,12 @@ export const mockCourse = {
           freeAssetLinks: [
             {
               id: "one",
-              mediaType: "YOUTUBE",
+              mediaType: "YouTube",
               linkUrl: "www.youtube.com"
+            },{
+              id: "two",
+              mediaType: "docs",
+              linkUrl: "https://byjus.com/maths/number-lines/"
             }
           ]
         },{
@@ -38,13 +42,33 @@ export const mockCourse = {
               id: "D_FIRST",
               unitId: "U_ALG_ONE_2_EXPONENT",
               text: "It would also be nice to be good at them."
-            } 
+            }
           ],
           freeAssetLinks: [
             {
               id: "one",
-              mediaType: "YOUTUBE",
+              mediaType: "YouTube",
               linkUrl: "www.youtube.com"
+            },{
+              id: "two",
+              mediaType: "docs",
+              linkUrl: "https://byjus.com/maths/number-lines/"
+            },{
+              id: "one",
+              mediaType: "YouTube",
+              linkUrl: "www.youtube.com"
+            },{
+              id: "two",
+              mediaType: "docs",
+              linkUrl: "https://byjus.com/maths/number-lines/"
+            },{
+              id: "one",
+              mediaType: "YouTube",
+              linkUrl: "www.youtube.com"
+            },{
+              id: "two",
+              mediaType: "docs",
+              linkUrl: "https://byjus.com/maths/number-lines/"
             }
           ]
         }
@@ -68,7 +92,7 @@ export const mockCourse = {
           freeAssetLinks: [
             {
               id: "one",
-              mediaType: "YOUTUBE",
+              mediaType: "YouTube",
               linkUrl: "www.youtube.com"
             }
           ]
@@ -83,19 +107,3 @@ export const badCourse = {
   name: "Something went wrong. Course not fetched",
   chapters: []
 }
-
-
-// description: [
-//             {
-//               id: 0,
-//               unitId: "DES_ALG_ONE_1_BASICS",
-//               text: "This is where we build out the ground work for all of algebra. Some of this may be review, but if not, it must be learned now."
-//             }
-//           ]
-
-
-      // freeAssetLinks: [{
-      //       id: "FAL_ALG_ONE_1_1",
-      //       mediaType: "YOU_TUBE",
-      //       linkUrl: "https://www.youtube.com/watch?v=GAN-jgzYsIo"
-      //     }]

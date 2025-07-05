@@ -1,5 +1,6 @@
 .chapterBody {
   background-color: green;
+  width: 100%;
 }
 
 .openTop {
@@ -8,4 +9,10 @@
 
 .unitsField {
   background-color: rgb(7, 245, 7);
+}
+
+@media only screen and (min-width: 769px){
+  .chapterBody {
+    width: 80%;
+  }
 }

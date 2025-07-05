@@ -25,7 +25,7 @@ const UnitDisplay = (props: Props) => {
               </div>
             })}
           </div>
-          <div className={`${styles.linkField} mb-2 flex flex-row`}>
+          <div className={`${styles.linkField} flex flex-row flex-wrap`}>
             {freeAssetLinks.map((FAL, index) => {
               return <FreeAssetLinkDisplay key={index} asset={FAL}/>
             })}

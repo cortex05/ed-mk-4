@@ -1,0 +1,19 @@
+.falBody {
+  border: 2px solid white;
+}
+
+/* COLORS */
+.youtube {
+  background-color: red;
+  color: white;
+}
+
+.docs {
+  background-color: blue;
+  color: white;
+}
+
+.generic {
+  background: orange;
+  color: black;
+}

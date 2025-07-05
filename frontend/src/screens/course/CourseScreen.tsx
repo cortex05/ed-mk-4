@@ -30,7 +30,7 @@ const CoursePage = () => {
         <h1 className='text-4xl'>Loading....</h1>
       }
       {!isLoading &&  course &&
-        <div>
+        <div className='flex flex-col items-center'>
           <h1 className='text-center text-2xl'>Course Id: {courseId}!!</h1>
           <h1 className='text-center text-2xl md:text-4xl underline underline-offset-8 mb-4'>{course.name}</h1>
           {course.chapters.map((chapter) => {
