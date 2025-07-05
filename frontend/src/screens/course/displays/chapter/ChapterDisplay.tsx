@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import type { IChapter } from '../../../../types/types'
 import styles from './ChapterDisplay.module.css'
 import UnitDisplay from '../unit/UnitDisplay'
