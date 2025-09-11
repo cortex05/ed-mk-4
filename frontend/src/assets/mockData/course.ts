@@ -100,7 +100,7 @@ export const mockCourse = {
       ]
     }
   ]
-}
+} 
 
 export const badCourse = {
   id: "BAD_COURSE",
