@@ -2,4 +2,6 @@
 # /frontend
 node_modules
 
+.env
+dist/
 keys.ts

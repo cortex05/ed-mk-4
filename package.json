@@ -2,10 +2,11 @@
   "name": "ed-mk-4",
   "version": "1.0.0",
   "description": "Attempt with typescript",
-  "main": "server,js",
+  "main": "server.ts",
   "scripts": {
-    "start": "node backend/server.js",
-    "server": "nodemon backend/server.js",
+    "start": "ts-node backend/src/server.ts",
+    "build": "tsc -p backend/ && tsc -p frontend/",
+    "server": "nodemon backend/src/server.ts",
     "client": "npm dev --prefix frontend",
     "dev": "concurrently \"npm run server\" \"cd frontend && npm run dev\""
   },
@@ -24,11 +25,18 @@
   "homepage": "https://github.com/cortex05/ed-mk-4#readme",
   "dependencies": {
     "axios": "^1.12.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
     "express": "^5.1.0",
-    "mongoose": "^8.18.1",
-    "nodemon": "^3.1.10"
+    "mongoose": "^8.18.1"
   },
   "devDependencies": {
-    "concurrently": "^9.2.1"
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.2",
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
   }
 }

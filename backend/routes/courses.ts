@@ -1,11 +1,12 @@
-import express from 'express'
+import express, { Request, Response } from 'express';
 
-const router = express.Router()
+const coursesRoutes = express.Router()
 
-router.route('/:courseId').get((req, res) => {
+coursesRoutes.route('/:courseId').get((req: Request, res: Response) => {
   const { courseId } = req.params
   // Fetch course data using courseId
   res.json({ message: `Course ID: ${courseId}` })
+  return res.json({ message: `Course ID: ${courseId}` })
 })
 
-export default router
+export default coursesRoutes
