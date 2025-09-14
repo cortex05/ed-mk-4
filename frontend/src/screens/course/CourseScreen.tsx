@@ -16,9 +16,9 @@ const CoursePage = () => {
 
     try {
       setCourse(mockCourse);
-      axios.get(`http://localhost:5000/api/courses/${courseId}`)
+      axios.get(`http://localhost:5000/api/courses/test`)
         .then((data) => {
-          console.log(data);
+          console.log("Data: ", data);
         })
         .catch((error) => {
           console.error("Error fetching course data:", error);
