@@ -7,6 +7,7 @@ export const fetchTestData = async () => {
 }
 
 export const fetchSpecificCourse = async (courseId: string) => {
+  console.log("testing info", courseId)
   const database = db.getDb()
   const data = await database.collection("courses").findOne({ id: courseId })
   return data

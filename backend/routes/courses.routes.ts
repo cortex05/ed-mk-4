@@ -11,7 +11,7 @@ const coursesRoutes = express.Router()
 // })
 
 coursesRoutes.get('/test', getTestData)
-coursesRoutes.get(':courseId', getSpecificCourse)
+coursesRoutes.get('/:courseId', getSpecificCourse)
 
 // .get(async (req: Request, res: Response) => {
 //   const database = db.getDb()

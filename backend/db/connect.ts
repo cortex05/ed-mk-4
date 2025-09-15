@@ -1,6 +1,5 @@
 import { MongoClient, ServerApiVersion, Db } from 'mongodb';
 import dotenv from 'dotenv';
-import { get } from 'http';
 // dotenv.config({path: '../config.env'});
 dotenv.config({ path: require('path').resolve(__dirname, '../config.env') });
 
