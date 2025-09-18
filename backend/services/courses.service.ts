@@ -10,16 +10,15 @@ import expressAsyncHandler from "express-async-handler"
 
 import Course from "../models/courseModel"
 
-export const fetchSpecificCourse = expressAsyncHandler(async (req: Request, res: Response) => {
+export const fetchSpecificCourse = (async (courseId: string) => {
   // const course = await Course.findOne({ id: req.params.courseId })
   // res.status(200).json(course)
-  const { courseId } = req.params;
   try {
     const data = await Course.findOne({ id: courseId }); // Direct DB query
-    return res.json(data);
+    return data
   } catch (error) {
     console.error("Error fetching specific course: ", error);
-    return res.status(500).json({ message: "Internal server error" });
+    return error
   }
 })
 

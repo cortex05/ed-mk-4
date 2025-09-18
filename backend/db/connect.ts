@@ -23,8 +23,11 @@ if (!atlasUri) {
 
 export const connectToServer = async () => {
   try {
-    const connection =await mongoose.connect(atlasUri as string);
-    console.log(`Connected to MongoDB with Mongoose: ${connection.connection.host}`);
+    const connection = await mongoose.connect(atlasUri as string, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true
+    } as mongoose.ConnectOptions);
+    console.log(`Connected to MongoDB with Mongoose: ${connection.connection.name}`);
   } catch (err) {
     console.error('Error connecting to MongoDB:', err);
     throw err;

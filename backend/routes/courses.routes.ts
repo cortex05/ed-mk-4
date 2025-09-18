@@ -1,5 +1,5 @@
 import express from 'express';
-import { getTestData, getSpecificCourse } from '../controllers/courses.controller'
+import { getSpecificCourse } from '../controllers/courses.controller'
 
 const coursesRoutes = express.Router()
 
@@ -10,7 +10,7 @@ const coursesRoutes = express.Router()
 //   return res.json({ message: `Course ID: ${courseId}` })
 // })
 
-coursesRoutes.get('/test', getTestData)
+// coursesRoutes.get('/test', getTestData)
 coursesRoutes.get('/:courseId', getSpecificCourse)
 
 // .get(async (req: Request, res: Response) => {

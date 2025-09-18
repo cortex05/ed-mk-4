@@ -18,7 +18,7 @@ const CoursePage = () => {
       setCourse(mockCourse);
       axios.get(`http://localhost:5000/api/courses/ALGEBRA_ONE`)
         .then((data) => {
-          console.log("Data: ", data.data);
+          console.log("Data: ", data);
         })
         .catch((error) => {
           console.error("Error fetching course data:", error);
