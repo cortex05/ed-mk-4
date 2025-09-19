@@ -21,7 +21,7 @@ export const mockGradeLinks = [
     supportText: "Math splits off into various pathways",
     courseLinks: [
       {domain: "MATH", name: "Math", id: "SEVENTH-MATH"}, 
-      {domain: "MATH", name: "Algebra 1", id: "ALGEBRA-ONE"}, 
+      {domain: "MATH", name: "Algebra 1", id: "ALGEBRA_ONE"}, 
       {domain: "READING", name: "Reading", id: "SEVENTH-READING"}, 
       {domain: "ENGLISH", name: "English", id: "SEVENTH-ENGLISH"}
     ]

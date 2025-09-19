@@ -6,6 +6,8 @@ import { badCourse, mockCourse } from "../../assets/mockData/course.ts";
 import ChapterDisplay from "./displays/chapter/ChapterDisplay.tsx";
 import axios from "axios";
 
+const baseUrl = import.meta.env.VITE_API_BASE_URL;
+
 const CoursePage = () => {
   const { courseId } = useParams<string>();
   const [course, setCourse] = useState<ICourse>();
@@ -15,11 +17,13 @@ const CoursePage = () => {
     setIsLoading(true);
 
     try {
-      // setCourse(mockCourse);
-      axios.get(`http://localhost:5000/api/courses/ALGEBRA_ONE`)
+      axios.get(`${baseUrl}/api/courses/${courseId}`)
         .then((data) => {
-          console.log("Data: ", data.data);
-          setCourse(data.data);
+          if(data.data){
+            setCourse(data.data)
+          } else {
+            setCourse(badCourse)
+          }
         })
         .catch((error) => {
           console.error("Error fetching course data:", error);
