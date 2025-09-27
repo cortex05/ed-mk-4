@@ -5,8 +5,6 @@ import DataContext from './context/DataContext.ts'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <DataContext.Provider value={{ activeSubjects: null, loading: true }}>
       <App />
-    </DataContext.Provider>
   </StrictMode>,
 )
