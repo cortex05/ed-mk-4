@@ -3,7 +3,13 @@ import  { createContext } from 'react';
 export interface ActiveSubjects {
   domain: string
   displayName: string,
-  _id: string
+  description: string,
+  id: string,
+  courseLinks: {
+    domain: string
+    name: string
+    id: string
+  }[]
 }
 
 export interface GradeLevelLink {

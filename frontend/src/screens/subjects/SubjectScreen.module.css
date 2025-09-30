@@ -1,29 +1,14 @@
-.link {
-  background-color: black;
-  color: white;
+.break {
   width: 100%;
-  margin-bottom: 20px;
-  text-align: center;
-  height: 60px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  transition: .5s;
-}
-
-.link:hover {
-  box-shadow: 10px 10px 5px blue;
+  align-items: center;
 }
 
 @media only screen and (min-width: 492px){
-  .link {
-    width: 200px;
-    margin-right: 10px;
-  }
-}
-
-@media only screen and (min-width: 769px){
-  .link {
-    margin-right: 20px;
+  .break {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }

@@ -6,6 +6,15 @@ export interface IGradeLink {
   courseLinks: ICourseLink[]
 }
 
+// Subjects
+export interface ISubjectLink {
+  id: string
+  displayName: string
+  domain: string,
+  description: string,
+  courseLinks: ICourseLink[]
+}
+
 // Courses
 export interface ICourseLink {
   domain: string,

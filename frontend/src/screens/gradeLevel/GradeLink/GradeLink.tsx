@@ -3,7 +3,7 @@ import type { IGradeLink } from '../../../types/types'
 
 type Props = {
   grade: IGradeLink
-  openModal: Function
+  openModal: Function 
 }
 
 const GradeLink = (props : Props) => {
