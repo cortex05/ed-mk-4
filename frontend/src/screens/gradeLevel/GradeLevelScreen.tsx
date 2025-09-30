@@ -1,14 +1,15 @@
 import GradeLink from './GradeLink/GradeLink'
-import { mockGradeLinks } from '../../assets/mockData/gradeLevelLinks'
 import Modal from '../../components/Modal/Modal'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import type { ICourseLink, IGradeLink } from '../../types/types'
 import CourseLink from '../../components/utilities/CourseLink/CourseLink'
 import styles from './GradeLevelScreen.module.css'
+import DataContext from '../../context/DataContext'
 
 const GradeLevelPage = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
   const [activePreview, setActivePreview] = useState<IGradeLink>()
+  const { gradeLevelLinks } = useContext(DataContext);
 
   const handlePreview = (linkData: IGradeLink) => {
     setActivePreview(linkData)
@@ -19,7 +20,7 @@ const GradeLevelPage = () => {
     <div className='p-8'>
       <h1 className='text-4xl text-center mb-8'>Click a grade to get an overview</h1>
       <div className='flex flex-wrap justify-center'>
-        {mockGradeLinks.map((gradeLink) => {
+        {gradeLevelLinks?.map((gradeLink) => {
           return <GradeLink key={gradeLink.id} grade={gradeLink} openModal={handlePreview}/>
         })}
       </div>

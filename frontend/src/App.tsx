@@ -9,9 +9,8 @@ import { useEffect, useState } from "react";
 import DataContext, { type ActiveSubjects } from "./context/DataContext";
 
 function App() {
-  const [activeSubjects, setActiveSubjects] = useState<ActiveSubjects[] | null>(
-    null
-  );
+  const [activeSubjects, setActiveSubjects] = useState<ActiveSubjects[] | null>(null)
+  const [gradeLevelLinks, setGradeLevelLinks] = useState<null | any>(null)
 
   const fetchActiveSubjects = async () => {
     try {
@@ -22,6 +21,16 @@ function App() {
       setActiveSubjects(data);
     } catch (error) {
       console.error("Error fetching active subjects:", error);
+    }
+
+    try {
+      const response = await fetch(
+        `${import.meta.env.VITE_API_BASE_URL}/api/grade-levels`
+      );
+      const data = await response.json()
+      setGradeLevelLinks(data);
+    } catch (error) {
+      console.error("Error fetching grade level links:", error)
     }
   };
 
@@ -35,6 +44,7 @@ function App() {
         <DataContext.Provider
           value={{
             activeSubjects,
+            gradeLevelLinks
           }}
         >
           <BrowserRouter>

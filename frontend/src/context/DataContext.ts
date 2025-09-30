@@ -6,12 +6,25 @@ export interface ActiveSubjects {
   _id: string
 }
 
+export interface GradeLevelLink {
+  id: string
+  gradeName: string
+  supportText: string
+  courseLinks: {
+    domain: string
+    name: string
+    id: string
+  }[]
+}
+
 interface DataContextType {
   activeSubjects: ActiveSubjects[] | null
+  gradeLevelLinks: GradeLevelLink[] | null
 }
 
 const initialValues = {
-  activeSubjects: []
+  activeSubjects: [],
+  gradeLevelLinks: []
 }
 
 const DataContext = createContext<DataContextType>(initialValues as DataContextType);
