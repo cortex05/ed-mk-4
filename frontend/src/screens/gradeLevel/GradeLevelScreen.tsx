@@ -18,7 +18,8 @@ const GradeLevelPage = () => {
 
   return (
     <div className='p-8'>
-      <h1 className='text-4xl text-center mb-8'>Click a grade to get an overview</h1>
+      <h1 className='text-4xl text-center mb-8'>Search by grade level</h1>
+      <p className='text-2xl text-center mb-4'>Click on a grade to see what kinds of topics you will be learning about. Grades and topics are updated regularly.</p>
       <div className='flex flex-wrap justify-center'>
         {gradeLevelLinks?.map((gradeLink) => {
           return <GradeLink key={gradeLink.id} grade={gradeLink} openModal={handlePreview}/>

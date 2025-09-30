@@ -1,0 +1,12 @@
+.imgBorder img {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 4px;
+  margin: 10px 0;
+}
+
+.imgBorder a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: #0073e6;
+}
