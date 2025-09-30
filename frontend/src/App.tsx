@@ -4,6 +4,7 @@ import Home from "./screens/home/HomeScreen";
 import GradeLevels from "./screens/gradeLevel/GradeLevelScreen";
 import Subjects from "./screens/subjects/SubjectsScreen";
 import Course from "./screens/course/CourseScreen";
+import Explanation from "./screens/explanations/ExplanationScreen";
 import "./App.css";
 import { useEffect, useState } from "react";
 import DataContext, { type ActiveSubjects } from "./context/DataContext";
@@ -54,6 +55,7 @@ function App() {
               <Route path="/gradelevels" element={<GradeLevels />} />
               <Route path="/subjects" element={<Subjects />} />
               <Route path="/course/:courseId" element={<Course />} />
+              <Route path="/how_to_use" element={<Explanation />} />
             </Routes>
           </BrowserRouter>
         </DataContext.Provider>
