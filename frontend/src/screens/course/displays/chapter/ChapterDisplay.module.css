@@ -10,8 +10,8 @@
 } */
 
 .unitsField {
-  background-color: #3B82F6;
-  color: #F9FAFB;
+  background-color: #1f69e0;
+  color: rgb(249, 250, 251);
 }
 
 @media only screen and (min-width: 769px){

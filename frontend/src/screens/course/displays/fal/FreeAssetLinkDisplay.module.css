@@ -1,7 +1,6 @@
 .falBody {
   border: 2px solid #1F2937;
   display: inline-block;
-  color: white;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(31, 41, 55, 0.1);  /* subtle base shadow */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -15,17 +14,18 @@
 }
 
 /* COLORS */
+/* These must be small to pass AAA */
 .youtube {
-  background-color: #EF4444;
-  color: #1F2937;
+  background-color: #e20808;
+  color: #f9fafb;
 }
 
 .docs {
-  background-color: #E0F2FE;
+  background-color: #e0f2fe;
   color: #1F2937;
 }
 
 .generic {
-  background: #10B981;
+  background: rgb(16, 185, 129);
   color: #1F2937;
 }
