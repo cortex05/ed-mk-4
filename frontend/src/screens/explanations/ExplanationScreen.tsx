@@ -10,9 +10,6 @@ const ExplanationScreen = () => {
     <div className='p-8'>
       <div className='text-center mb-8 border-b-2 pb-4'>
         <h1 className='text-4xl mb-8' id='how-to-use'>How to use this site</h1>
-        <p className='text-2xl mb-4'>
-          This site is meant to be a tool for people to use to find guidance in their studies. It is not a substitute for a course or a teacher, but rather supplemental resources that may shed light on a lesson or provide a direction for a student who lacking one. This site lacks the nuance of a human teacher with a planned curiculum that is backed by personal experience as well as the cusomization and personalization of various AI educational tools. This is a tool for users to take their education into their own hands and to help them seek out what they need. The initiative and discernment of the user of this site is paramount to their success in their studies. 
-        </p>
         <p className='text-2xl'>
           There are two main ways to use this site: browsing by grade level or by subject. Each path will lead you to an outline of a course you may encounter; complete with an explanation of what is important about the course and how it may come up in your studies. Finally, these explanations come with links to various FREE resources that go in depth on each topic. These could be links to videos, articles, or documentation on a subject. The complexity of the resources may vary.</p>
       </div>
