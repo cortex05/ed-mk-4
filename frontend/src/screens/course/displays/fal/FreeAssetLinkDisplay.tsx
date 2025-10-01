@@ -21,7 +21,9 @@ const FreeAssetLinkDisplay = (props: Props) => {
 
   return (
     <div className={`${styles.falBody} py-[1px] px-[8px] rounded-lg mr-2 mb-2 ${falColor(asset.mediaType)}`}>
-      {asset.mediaType}  
+      <a href={asset.linkUrl} target="_blank" rel="noopener noreferrer">
+        {asset.mediaType}
+      </a>
     </div>
   )
 }

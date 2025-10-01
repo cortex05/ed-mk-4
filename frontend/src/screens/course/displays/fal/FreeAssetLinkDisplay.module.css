@@ -1,5 +1,17 @@
 .falBody {
   border: 2px solid #1F2937;
+  display: inline-block;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(31, 41, 55, 0.1);  /* subtle base shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.falBody:hover {
+  transform: translateY(-3px);  /* slight upward movement */
+  box-shadow: 0 6px 12px rgba(31, 41, 55, 0.45); /* stronger shadow on bottom */
 }
 
 /* COLORS */
