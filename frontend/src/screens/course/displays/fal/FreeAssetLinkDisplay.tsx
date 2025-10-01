@@ -12,7 +12,7 @@ const FreeAssetLinkDisplay = (props: Props) => {
     switch(mediaType){
       case "YouTube":
         return styles.youtube
-      case "docs":
+      case "Documents":
         return styles.docs
       default:
         return styles.generic

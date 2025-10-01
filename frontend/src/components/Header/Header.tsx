@@ -6,9 +6,9 @@ const Header = () => {
   return (
     <div className={`${styles.headerBody} w-screen p-4 flex items-center`}>
       <div className={`${styles.links}`}>
-        <button onClick={() => navigate("/")} className='text-xl'>Home</button>
-        <button onClick={() => navigate("/gradelevels")} className='text-l'>Grade Level</button>
-        <button onClick={() => navigate("/subjects")}>Subjects</button>
+        <button onClick={() => navigate("/")} className={`${styles.headerDivider} text-2xl`}>Home</button>
+        <button onClick={() => navigate("/gradelevels")} className={`${styles.headerDivider}`}>Grade Level</button>
+        <button onClick={() => navigate("/subjects")} className={`${styles.headerDivider}`}>Subjects</button>
         <button onClick={() => navigate("/how_to_use")}>How to Use</button>
       </div>
     </div>

@@ -1,10 +1,15 @@
 .nameDisplay {
-  border-bottom: 2px solid black;
+  /* border-bottom: px solid black; */
+  padding-bottom: 8px;
 }
 
 .descriptionBody {
-  background-color: rgb(2, 56, 2);
-  color: wheat;
+  background-color: #FBBF24;
+  color: #1F2937;
+}
+
+.unitBody {
+  border-bottom: 1px solid #F9FAFB;
 }
 
 .linkField {

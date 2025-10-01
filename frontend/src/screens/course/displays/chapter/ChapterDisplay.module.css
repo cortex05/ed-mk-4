@@ -1,14 +1,17 @@
 .chapterBody {
-  background-color: green;
+  /* gpt suggestion */
+  background-color: #1F2937;
+  color: #F9FAFB;
   width: 100%;
 }
 
-.openTop {
-  border-bottom: 4px solid black;
-}
+/* .openTop {
+  border-bottom: 4px solid #3B82F6;
+} */
 
 .unitsField {
-  background-color: rgb(7, 245, 7);
+  background-color: #3B82F6;
+  color: #F9FAFB;
 }
 
 @media only screen and (min-width: 769px){

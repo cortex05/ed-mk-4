@@ -1,19 +1,19 @@
 .falBody {
-  border: 2px solid white;
+  border: 2px solid #1F2937;
 }
 
 /* COLORS */
 .youtube {
-  background-color: red;
-  color: white;
+  background-color: #EF4444;
+  color: #1F2937;
 }
 
 .docs {
-  background-color: blue;
-  color: white;
+  background-color: #E0F2FE;
+  color: #1F2937;
 }
 
 .generic {
-  background: orange;
-  color: black;
+  background: #10B981;
+  color: #1F2937;
 }

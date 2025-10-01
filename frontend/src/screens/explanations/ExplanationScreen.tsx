@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './ExplanationScreen.module.css'
 import gradeLinkImage from '../../assets/images/exp_1.png'
 import subjectLinkImage from '../../assets/images/exp_2.png'

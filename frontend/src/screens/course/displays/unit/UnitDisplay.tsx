@@ -14,7 +14,7 @@ const UnitDisplay = (props: Props) => {
   const [isCollapseOpen, setIsCollapseOpen] = useState<boolean>(false)
 
   return (
-    <div onClick={() => setIsCollapseOpen(!isCollapseOpen)}>
+    <div onClick={() => setIsCollapseOpen(!isCollapseOpen)} className={`${styles.unitBody} mb-2`}>
       <p className={`${isCollapseOpen ? styles.nameDisplay : ''}`}>{unit.name}</p>
       {isCollapseOpen && 
         <div className={`${styles.descriptionBody} p-2`}>

@@ -11,7 +11,7 @@ const ChapterDisplay = (props: Props) => {
   const [isCollapseOpen, setIsCollapseOpen] = useState<boolean>(false)
 
   return (
-    <div className={`${styles.chapterBody} mb-2 md:mb-4`}>
+    <div className={`${styles.chapterBody} mb-2 md:mb-4 p-1 md:p-2`}>
       <div className={`${isCollapseOpen ? styles.openTop : ''} p-2`} onClick={() => setIsCollapseOpen(!isCollapseOpen)}>
         <h2 className='text-xl md:text-2xl'>{chapter.name}</h2>
       </div>

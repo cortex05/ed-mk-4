@@ -29,7 +29,7 @@ export const mockCourse = {
               linkUrl: "www.youtube.com"
             },{
               id: "two",
-              mediaType: "docs",
+              mediaType: "Documents",
               linkUrl: "https://byjus.com/maths/number-lines/"
             }
           ]
@@ -51,7 +51,7 @@ export const mockCourse = {
               linkUrl: "www.youtube.com"
             },{
               id: "two",
-              mediaType: "docs",
+              mediaType: "Documents",
               linkUrl: "https://byjus.com/maths/number-lines/"
             },{
               id: "one",
@@ -59,7 +59,7 @@ export const mockCourse = {
               linkUrl: "www.youtube.com"
             },{
               id: "two",
-              mediaType: "docs",
+              mediaType: "Documents",
               linkUrl: "https://byjus.com/maths/number-lines/"
             },{
               id: "one",
@@ -67,7 +67,7 @@ export const mockCourse = {
               linkUrl: "www.youtube.com"
             },{
               id: "two",
-              mediaType: "docs",
+              mediaType: "Documents",
               linkUrl: "https://byjus.com/maths/number-lines/"
             }
           ]
