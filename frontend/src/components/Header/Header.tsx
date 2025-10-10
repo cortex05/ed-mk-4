@@ -5,7 +5,7 @@ const Header = () => {
   const navigate = useNavigate()
   return (
     <div className={`${styles.headerBody} w-screen p-4 flex items-center`}>
-      <div className={`${styles.links}`}>
+      <div className={`${styles.links}`}> 
         <button onClick={() => navigate("/")} className={`${styles.headerDivider} text-2xl`}>Home</button>
         <button onClick={() => navigate("/gradelevels")} className={`${styles.headerDivider}`}>Grade Level</button>
         <button onClick={() => navigate("/subjects")} className={`${styles.headerDivider}`}>Subjects</button>

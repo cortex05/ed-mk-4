@@ -3,22 +3,18 @@ export const mockCourse = {
   name: "Algebra 1",
   chapters: [
     {
-      id: "CH_ALG_ONE_1",
-      courseId: "ALGEBRA_ONE",
+      id: 0,
       name: "1 - Basics",
       units: [
         {
-          id: "U_ALG_ONE_1_BASICS",
+          id: 0,
           name: "1.1 Algebra basics",
-          chapterId: "CH_ALG_ONE_1",
           description: [
             {
-              id: "D_FIRST",
-              unitId: "U_ALG_ONE_1_BASICS",
+              id: 0,
               text: "You need to know the basics operators (Addition, Subtraction, Multiplication, Division."
             },{
-              id: "D_SECOND",
-              unitId: "U_ALG_ONE_1_BASICS",
+              id: 1,
               text: "It would also be nice to be good at them."
             } 
           ],
@@ -34,13 +30,11 @@ export const mockCourse = {
             }
           ]
         },{
-          id: "U_ALG_ONE_2_EXPONENT",
+          id: 1,
           name: "1.2 Exponents",
-          chapterId: "CH_ALG_ONE_1",
           description: [
             {
-              id: "D_FIRST",
-              unitId: "U_ALG_ONE_2_EXPONENT",
+              id: 0,
               text: "It would also be nice to be good at them."
             }
           ],
@@ -74,18 +68,15 @@ export const mockCourse = {
         }
       ]
     },{
-      id: "CH_ALG_ONE_2",
-      courseId: "ALGEBRA_ONE",
+      id: 1,
       name: "2 - Order of Operations",
       units: [
         {
-          id: "U_ALG_ONE_1_PEMDAS",
+          id: 0,
           name: "2.1 PEMDAS",
-          chapterId: "CH_ALG_ONE_2",
           description: [
             {
-              id: "D_FIRST",
-              unitId: "U_ALG_ONE_1_PEMDAS",
+              id: 0,
               text: "It would also be nice to be good at them."
             } 
           ],
