@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import type { ICourse } from "../../types/types";
 
-import { badCourse, mockCourse } from "../../assets/mockData/course.ts";
+import { badCourse } from "../../assets/mockData/course.ts";
 import ChapterDisplay from "./displays/chapter/ChapterDisplay.tsx";
 import axios from "axios";
 
@@ -17,15 +17,15 @@ const CoursePage = () => {
     setIsLoading(true);
 
     try {
-      axios.get(`${baseUrl}/api/courses/${courseId}`)
-        .then((data) => {
+      axios.get<ICourse>(`${baseUrl}/api/courses/${courseId}`)
+        .then((data: { data: ICourse }) => {
           if(data.data){
             setCourse(data.data)
           } else {
             setCourse(badCourse)
           }
         })
-        .catch((error) => {
+        .catch((error: unknown) => {
           console.error("Error fetching course data:", error);
         })
     } catch (error) {
