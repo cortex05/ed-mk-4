@@ -4,7 +4,7 @@ import type { ICourse } from "../../types/types";
 
 import { badCourse } from "../../assets/mockData/course.ts";
 import ChapterDisplay from "./displays/chapter/ChapterDisplay.tsx";
-import axios from "axios";
+import axios from "axios"; 
 
 const baseUrl = import.meta.env.VITE_API_BASE_URL;
 
