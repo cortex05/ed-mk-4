@@ -5,6 +5,7 @@
   "main": "server.ts",
   "scripts": {
     "start": "ts-node backend/src/server.ts",
+    "start:prod": "ts-node backend/src/server.ts",
     "build": "tsc -p backend/ && tsc -p frontend/",
     "server": "nodemon backend/src/server.ts",
     "client": "npm dev --prefix frontend",
