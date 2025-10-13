@@ -29,20 +29,20 @@ export interface ICourse {
 }
 
 export interface IChapter {
-  id: string
+  id: number
   name: string
   units: IUnit[]
 }
 
 export interface IUnit {
-  id: string
+  id: number
   name: string
   description: IDescription[]
   freeAssetLinks: IAssetLink[]
 }
 
 export interface IDescription {
-  id: string
+  id: number
   text: string
 }
 
