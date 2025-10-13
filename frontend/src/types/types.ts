@@ -30,7 +30,6 @@ export interface ICourse {
 
 export interface IChapter {
   id: string
-  courseId: string
   name: string
   units: IUnit[]
 }
@@ -38,14 +37,12 @@ export interface IChapter {
 export interface IUnit {
   id: string
   name: string
-  chapterId: string
   description: IDescription[]
   freeAssetLinks: IAssetLink[]
 }
 
 export interface IDescription {
   id: string
-  unitId: string
   text: string
 }
 
