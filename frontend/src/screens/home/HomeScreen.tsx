@@ -4,7 +4,7 @@ const HomePage = () => {
   return (
     <div>
       <div className={`${styles.lander} p-8`}>
-        <h1 className="text-center text-4xl mb-4">Welcome to Daniel's App</h1>
+        <h1 className="text-center text-4xl mb-4">Welcome</h1>
       </div>
       <div className="p-8">
         <div className="mb-8">
