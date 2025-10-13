@@ -47,7 +47,7 @@ export interface IDescription {
 }
 
 export interface IAssetLink {
-  id: string
+  id: number
   mediaType: string
   linkUrl: string
 }
