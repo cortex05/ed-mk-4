@@ -18,7 +18,7 @@ const ChapterDisplay = (props: Props) => {
       {isCollapseOpen && 
         <div className={`${styles.unitsField} p-2`}>
           {chapter.units.map((unit) => {
-            return <UnitDisplay key={unit.id} unit={unit}/>
+            return <UnitDisplay key={unit.name} unit={unit}/>
           })}
         </div>
       }

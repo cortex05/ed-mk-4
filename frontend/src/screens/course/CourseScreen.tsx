@@ -44,7 +44,7 @@ const CoursePage = () => {
             {course.name}
           </h1>
           {course.chapters.map((chapter) => {
-            return <ChapterDisplay key={chapter.id} chapter={chapter} />;
+            return <ChapterDisplay key={`${chapter.courseId}-${chapter.order}`} chapter={chapter} />;
           })}
         </div>
       )}

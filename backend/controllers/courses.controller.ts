@@ -15,6 +15,7 @@ export const getSpecificCourse = async (req: Request, res: Response) => {
   const { courseId } = req.params
   try {
     const data = await fetchSpecificCourse(courseId)
+    
     return res.json(data)
   } catch (error) {
     console.error("Error fetching specific course: ", error)

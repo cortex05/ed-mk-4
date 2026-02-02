@@ -29,14 +29,16 @@ export interface ICourse {
 }
 
 export interface IChapter {
-  id: number
+  courseId: string
   name: string
+  order: number
   units: IUnit[]
 }
 
 export interface IUnit {
-  id: number
+  chapterId: number
   name: string
+  order: Number
   description: IDescription[]
   freeAssetLinks: IAssetLink[]
 }
