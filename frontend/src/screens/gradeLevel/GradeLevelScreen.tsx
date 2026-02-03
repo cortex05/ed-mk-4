@@ -22,7 +22,7 @@ const GradeLevelPage = () => {
       <p className='text-2xl text-center mb-4'>Click on a grade to see what kinds of topics you will be learning about. Grades and topics are updated regularly.</p>
       <div className='flex flex-wrap justify-center'>
         {gradeLevelLinks?.map((gradeLink) => {
-          return <GradeLink key={gradeLink.id} grade={gradeLink} openModal={handlePreview}/>
+          return <GradeLink key={`order-${gradeLink.order}`} grade={gradeLink} openModal={handlePreview}/>
         })}
       </div>
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>

@@ -1,4 +1,5 @@
 import  { createContext } from 'react';
+import type { IGradeLink } from '../types/types';
 
 export interface ActiveSubjects {
   domain: string
@@ -12,20 +13,9 @@ export interface ActiveSubjects {
   }[]
 }
 
-export interface GradeLevelLink {
-  id: string
-  gradeName: string
-  supportText: string
-  courseLinks: {
-    domain: string
-    name: string
-    id: string
-  }[]
-}
-
 interface DataContextType {
   activeSubjects: ActiveSubjects[] | null
-  gradeLevelLinks: GradeLevelLink[] | null
+  gradeLevelLinks: IGradeLink[] | null
 }
 
 const initialValues = {
