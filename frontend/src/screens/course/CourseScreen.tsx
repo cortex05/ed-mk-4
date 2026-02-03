@@ -4,9 +4,7 @@ import type { ICourse } from "../../types/types";
 
 import { badCourse } from "../../assets/mockData/course.ts";
 import ChapterDisplay from "./displays/chapter/ChapterDisplay.tsx";
-import axios from "axios"; 
-
-const baseUrl = import.meta.env.VITE_API_BASE_URL;
+import { api } from "../../utility/api.ts";
 
 const CoursePage = () => {
   const { courseId } = useParams<string>();
@@ -14,26 +12,38 @@ const CoursePage = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   useEffect(() => {
-    setIsLoading(true);
+    let isMounted = true
 
-    try {
-      axios.get<ICourse>(`${baseUrl}/api/courses/${courseId}`)
-        .then((data: { data: ICourse }) => {
-          if(data.data){
-            setCourse(data.data)
-          } else {
-            setCourse(badCourse)
-          }
-        })
-        .catch((error: unknown) => {
-          console.error("Error fetching course data:", error);
-        })
-    } catch (error) {
-      setCourse(badCourse)
+    const fetchCourse = async () => {
+      setIsLoading(true)
+
+      try {
+        const { data } = await api.get<ICourse>(
+          `/api/courses/${courseId}`,
+        )
+
+        if (isMounted) {
+          setCourse(data ?? badCourse)
+        }
+      } catch (error) {
+        console.error("Error fetching course data:", error)
+
+        if (isMounted) {
+          setCourse(badCourse)
+        }
+      } finally {
+        if (isMounted) {
+          setIsLoading(false)
+        }
+      }
     }
 
-    setIsLoading(false)
-  }, []);
+    fetchCourse()
+
+    return () => {
+      isMounted = false
+    }
+  }, [])
 
   return (
     <div className="font-serif p-8">
@@ -44,7 +54,12 @@ const CoursePage = () => {
             {course.name}
           </h1>
           {course.chapters.map((chapter) => {
-            return <ChapterDisplay key={`${chapter.courseId}-${chapter.order}`} chapter={chapter} />;
+            return (
+              <ChapterDisplay
+                key={`${chapter.courseId}-${chapter.order}`}
+                chapter={chapter}
+              />
+            );
           })}
         </div>
       )}

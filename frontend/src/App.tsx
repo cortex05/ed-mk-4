@@ -8,6 +8,7 @@ import Explanation from "./screens/explanations/ExplanationScreen";
 import "./App.css";
 import { useEffect, useState } from "react";
 import DataContext, { type ActiveSubjects } from "./context/DataContext";
+import { api } from "./utility/api";
 
 function App() {
   const [activeSubjects, setActiveSubjects] = useState<ActiveSubjects[] | null>(null)
@@ -15,20 +16,15 @@ function App() {
 
   const fetchActiveSubjects = async () => {
     try {
-      const response = await fetch(
-        `${import.meta.env.VITE_API_BASE_URL}/api/active-subjects`
-      );
-      const data = await response.json();
+      const { data } = await api.get<ActiveSubjects[]>('/api/active-subjects')
+
       setActiveSubjects(data);
     } catch (error) {
       console.error("Error fetching active subjects:", error);
     }
 
     try {
-      const response = await fetch(
-        `${import.meta.env.VITE_API_BASE_URL}/api/grade-levels`
-      );
-      const data = await response.json()
+      const  { data } = await api.get<any>('api/grade-levels')
       setGradeLevelLinks(data);
     } catch (error) {
       console.error("Error fetching grade level links:", error)
