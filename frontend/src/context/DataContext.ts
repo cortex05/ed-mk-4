@@ -9,7 +9,7 @@ export interface ActiveSubjects {
   courseLinks: {
     domain: string
     name: string
-    id: string
+    courseId: string
   }[]
 }
 
