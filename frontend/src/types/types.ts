@@ -20,7 +20,7 @@ export interface ISubjectLink {
 export interface ICourseLink {
   domain: string,
   name: string,
-  id: string
+  courseId: string
 }
 
 export interface ICourse {

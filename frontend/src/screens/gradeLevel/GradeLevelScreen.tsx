@@ -30,7 +30,7 @@ const GradeLevelPage = () => {
         <h3 className='text-l mb-4'>{activePreview?.supportText}</h3>
         <div className={`mt-2 ${styles.break}`}>
           {activePreview?.courseLinks.map((courseLink: ICourseLink) => {
-            return <CourseLink key={courseLink.id} link={courseLink}/>
+            return <CourseLink key={courseLink.courseId} link={courseLink}/>
           })}
         </div>
       </Modal>

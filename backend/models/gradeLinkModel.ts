@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const CourseLinkSchema = new mongoose.Schema({
-  id: { type: String, required: true },
+  courseId: { type: String, required: true },
   name: { type: String, required: true },
   domain: { type: String, required: true }
 });

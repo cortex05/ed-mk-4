@@ -24,6 +24,8 @@ const unitSchema = new mongoose.Schema({
   ]
 })
 
+unitSchema.index({ chapterId: 1, order: 1 })
+
 const Unit = mongoose.model('Unit', unitSchema)
 
 export default Unit

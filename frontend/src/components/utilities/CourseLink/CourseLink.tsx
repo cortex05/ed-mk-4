@@ -20,7 +20,7 @@ const CourseLink = (props: Props) => {
   return (
     <div 
       className={`${backColor} p-1 mr-4 mb-[4px] text-center ${styles.break}`}
-      onClick={() => navigate(`/course/${link.id}`)}>
+      onClick={() => navigate(`/course/${link.courseId}`)}>
       <p>{link.name}</p>
     </div>
   )
