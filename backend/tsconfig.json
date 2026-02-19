@@ -4,7 +4,7 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "outDir": "dist",
-    "rootDir": ".",  // <--- change from "src" to "."
+    "rootDir": "src",  // <--- change from "src" to "."
     "esModuleInterop": true,
     "strict": true
   },

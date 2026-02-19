@@ -1,12 +1,12 @@
 import express, { Express } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import { connectToServer } from '../db/connect'
-import { connectRedis } from '../db/redis'
+import { connectToServer } from './db/connect'
+import { connectRedis } from './db/redis'
 
-import coursesRoutes from '../routes/courses.routes'
-import activeSubjectsRoutes from '../routes/activeSubjects.routes';
-import gradeLevelsRoutes from '../routes/gradeLevels.routes';
+import coursesRoutes from './routes/courses.routes'
+import activeSubjectsRoutes from './routes/activeSubjects.routes';
+import gradeLevelsRoutes from './routes/gradeLevels.routes';
 dotenv.config();
 
 const port: string | number = process.env.PORT || 5000
